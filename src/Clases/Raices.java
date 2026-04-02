@@ -24,10 +24,11 @@ public class Raices {
     }
 
     private boolean tieneRaices(){
-
+        if(getDiscriminante()>= 0){return true;}else{return false;}
     }
 
     private boolean tieneRaiz(){
+        if(getDiscriminante() == 0){return true;}else{return false;}
 
     }
 
