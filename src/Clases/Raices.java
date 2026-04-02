@@ -11,14 +11,14 @@ public class Raices {
         this.c = c;
     }
 
-    private double[] obtenerRaices() {
+    private double[] obtenerRaices() { // hacemos una funcion que retorne dos posiciones de arreglo, para retornar las dos raices
         double x1 = (-b + Math.sqrt(getDiscriminante()))/(2*a);
         double x2 = (-b - Math.sqrt(getDiscriminante()))/(2*a);
 
         return new double []{x1, x2};
     }
 
-    private double obtenerRaiz(){
+    private double obtenerRaiz(){ // hacemos una funcion que retorne un numero, para retornar la unica raiz
 
         double x = (-b + Math.sqrt(getDiscriminante()))/(2*a);
         return x;
