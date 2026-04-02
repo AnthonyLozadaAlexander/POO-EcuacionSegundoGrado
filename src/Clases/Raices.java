@@ -11,12 +11,17 @@ public class Raices {
         this.c = c;
     }
 
-    private void obtenerRaices() {
+    private double[] obtenerRaices() {
         double x1 = (-b + Math.sqrt(getDiscriminante()))/(2*a);
         double x2 = (-b - Math.sqrt(getDiscriminante()))/(2*a);
+
+        return new double []{x1, x2};
     }
 
-    private void obtenerRaiz(){
+    private double obtenerRaiz(){
+
+        double x = (-b + Math.sqrt(getDiscriminante()))/(2*a);
+        return x;
 
     }
 
