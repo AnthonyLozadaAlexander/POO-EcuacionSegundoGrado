@@ -1,5 +1,7 @@
 ﻿package Clases;
 
+import javax.swing.*;
+
 public class Raices {
     private double a;
     private double b;
@@ -40,6 +42,15 @@ public class Raices {
 
     private void calcular(){
 
+        if(tieneRaices()){
+            obtenerRaices();
+        }
+        else if(tieneRaiz()){
+            obtenerRaiz();
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "Esta ecuacion no posee soluciones reales", "Error", JOptionPane.ERROR_MESSAGE);
+        }
     }
 
 }
