@@ -12,7 +12,8 @@ public class Raices {
     }
 
     private void obtenerRaices() {
-
+        double x1 = (-b + Math.sqrt(getDiscriminante()))/(2*a);
+        double x2 = (-b - Math.sqrt(getDiscriminante()))/(2*a);
     }
 
     private void obtenerRaiz(){
@@ -29,6 +30,10 @@ public class Raices {
 
     private boolean tieneRaiz(){
         if(getDiscriminante() == 0){return true;}else{return false;}
+
+    }
+
+    private void calcular(){
 
     }
 
